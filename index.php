@@ -13,7 +13,9 @@
     
     <body>
         <div class="container">
-            <!--#include virtual="header.ssi" -->
+            <?php
+                require($DOCUMENT_ROOT . "header.html");
+            ?>
             <article>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum sollicitudin libero id ultrices. Aenean convallis justo nec libero lobortis, et tincidunt risus adipiscing. Suspendisse a condimentum erat, quis volutpat purus. Mauris gravida justo ut elementum rhoncus. In a dolor ac odio imperdiet feugiat. Nunc eu sollicitudin dui. Etiam cursus dapibus ipsum, a cursus erat elementum sed. Etiam non dolor sed quam tempor accumsan eu vitae nulla.
 <br>
