@@ -53,7 +53,14 @@ table {
 /* How to round corners, align center? */
 
 body {
-    background: #fafad2;
+    background: #eee8aa;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0, #f0e68c), color-stop(1, #fffacd));
+    background: -webkit-linear-gradient(to bottom right, #f0e68c, #fffacd);
+    background: -moz-linear-gradient(to bottom right, #f0e68c, #fffacd);
+    background: -ms-linear-gradient(to bottom right, #f0e68c, #fffacd);
+    background: -o-linear-gradient(to bottom right, #f0e68c, #fffacd);
+    background: linear-gradient(to bottom right, #f0e68c, #fffacd);
+    color: #333;
     font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 }
 
@@ -64,7 +71,9 @@ div.container {
 }
 
 header {
-    background: #800000;
+    background: #903;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
     display: block;
     height: 64px;
     margin-top: 10px;
@@ -75,7 +84,7 @@ header {
 
 /* TODO: Use a Google font */
 header h1 {
-    color: #fff;
+    color: #fffacd;
     font-size: 32px;
     letter-spacing: .25em;
     line-height: 64px;
@@ -83,31 +92,67 @@ header h1 {
     word-spacing: .5em;
 }
 
-article {
-    float: left;
-    margin-right: 10px;
+nav {
+    background: #731d3a;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    color: #fffacd;
+    display: block;
+    letter-spacing: .25em;
     margin-bottom: 10px;
-    width: 630px;
+    width: 960px;
+
+}
+
+nav ul {
+    padding: 5px;
+    width: 960px;
+}
+
+nav ul li {
+    display: inline;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+article {
+    border: solid 2px #85755b;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    width: 606px;
 }
 
 aside {
+    border: solid 2px #85755b;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
     float: right;
-    margin-bottom: 10px;
-    width: 320px;
+    padding: 10px;
+    width: 296px;
 }
 
 footer {
+    background: #c36;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
     clear: both;
+    color: #fffacd;
     display: block;
+    letter-spacing: .25em;
     width: 960px;
 }
 
 footer ul {
-    list-style-type: none;
+    padding: 5px;
+    width: 960px;
 }
 
 /* How to float these? */
 footer ul li {
     display: inline;
-    padding: 10px;
+    padding: 40px;
 }
